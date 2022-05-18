@@ -4,6 +4,8 @@ import { TheHeader } from "components/TheHeader";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addPositions } from "store/positions/actions";
+import { ThemeProvider } from "styled-components";
+import { baseTheme, GllobalStyle } from "styles/themes";
 import data from "./mock/data.json";
 
 function App() {
@@ -14,13 +16,14 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider theme={baseTheme}>
+      <GllobalStyle />
       <TheHeader />
       <div className="container">
         <FilterPanel />
         <JobList />
       </div>
-    </>
+    </ThemeProvider>
   );
 }
 
