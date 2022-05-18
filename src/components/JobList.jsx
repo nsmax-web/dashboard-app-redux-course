@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addFilter } from "store/filters/actions";
-import { selectFilters } from "store/filters/selectors";
-import { selectVisiblePositions } from "store/positions/selectors";
+import { addFilter } from "../store/filters/actions";
+import { selectFilters } from "../store/filters/selectors";
+import { selectVisiblePositions } from "../store/positions/selectors";
 import { JobPosition } from "./JobPosition";
 
 const JobList = () => {
