@@ -1,6 +1,6 @@
 export const ADD_POSITIONS = "ADD_POSITIONS";
 
-export const addPositions = (positions) => ({
+export const addPositions = (positions: string[]) => ({
   type: ADD_POSITIONS,
   payload: positions,
 });
